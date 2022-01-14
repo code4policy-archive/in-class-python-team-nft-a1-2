@@ -24,7 +24,14 @@ for m in members:
 
 member_powers = list(set(member_powers))
 
-print(member_powers)
-
 
 # Prints those powers to the terminal
+
+print(member_powers)
+
+#Try It
+# Read superheroes.json
+
+# Write a header to the CSV file
+# Loop over the members, and for each member write a row to the csv file
+
