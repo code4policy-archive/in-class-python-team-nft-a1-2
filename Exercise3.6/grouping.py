@@ -4,12 +4,12 @@ import csv
 import json
 from pprint import pprint
 
-with open('vegtables.csv', 'r') as f:
+with open('vegetables.csv', 'r') as f:
     reader = csv.DictReader(f)
     vegtables = list(reader)
 
 # Group vegtables by color as a variable vegtables_by_color.
-vegtables = [
+vegetables = [
  {"name": "eggplant", "color": "purple"},
  {"name": "tomato", "color": "red"},
  {"name": "corn", "color": "yellow"},
@@ -19,7 +19,7 @@ vegtables = [
 ]
 
 vegtables_by_color = {}
-for veg in vegtables:
+for veg in vegetables:
     cc = veg['color']
     if cc in vegtables_by_color:
         vegtables_by_color[cc].append(veg)
